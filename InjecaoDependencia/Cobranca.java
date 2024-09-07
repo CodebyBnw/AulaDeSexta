@@ -14,4 +14,8 @@ public class Cobranca {
         return this.MetodoPagamento.executarPagamento();
     }
 
+    // Injeção via setter
+    public void setMetodoCobranca(IMetodoPagamento metodopgto) {
+        this.MetodoPagamento = metodopgto;
+    }
 }
